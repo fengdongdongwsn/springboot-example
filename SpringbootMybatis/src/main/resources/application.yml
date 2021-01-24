@@ -1,0 +1,12 @@
+server:
+  port: 8084
+spring:
+  #mysql数据库相关配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/uav?characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis依赖
+mybatis:
+  type-aliases-package: com.fdd.mybatis.dao
