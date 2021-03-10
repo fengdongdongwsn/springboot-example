@@ -20,7 +20,7 @@ public class SwaggerController {
     }
 
     @DeleteMapping(value = "/delete")
-    @ApiOperation(value = "删除评估任务", notes = "删除评估任务")
+    @ApiOperation(value = "删除任务", notes = "删除任务")
     public String delete(String name) {
         return "success";
     }
@@ -36,5 +36,4 @@ public class SwaggerController {
     public String selectAll() {
         return "json";
     }
-
 }
