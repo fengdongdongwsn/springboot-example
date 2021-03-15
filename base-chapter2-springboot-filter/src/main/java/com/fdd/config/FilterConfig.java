@@ -15,11 +15,13 @@ public class FilterConfig {
         MyFilter1 myFilter1 = new MyFilter1();
         filterRegistrationBean.setFilter(myFilter1);
         //此时访问 localhost:8080/xxx.a会进行执行
-
-        filterRegistrationBean.addUrlPatterns("*.a");//配置过滤规则
-        filterRegistrationBean.setName("MyFilter1");//设置过滤器名称
+        //配置过滤规则
+        filterRegistrationBean.addUrlPatterns("*.a");
+        //设置过滤器名称
+        filterRegistrationBean.setName("MyFilter1");
         //若两个过滤器的匹配规则一样，那么执行优先级高的，数字越小优先级越高
-        filterRegistrationBean.setOrder(1);//执行次序
+        //执行次序
+        filterRegistrationBean.setOrder(1);
         return filterRegistrationBean;
     }
 
@@ -29,10 +31,12 @@ public class FilterConfig {
         MyFilter2 myFilter2 = new MyFilter2();
         filterRegistrationBean.setFilter(myFilter2);
         //此时访问 localhost:8080/xxx.b会进行执行
-        filterRegistrationBean.addUrlPatterns("*.b");//配置过滤规则
-        filterRegistrationBean.setName("MyFilter2");//设置过滤器名称
-        filterRegistrationBean.setOrder(2);//执行次序
-
+        //配置过滤规则
+        filterRegistrationBean.addUrlPatterns("*.b");
+        //设置过滤器名称
+        filterRegistrationBean.setName("MyFilter2");
+        //执行次序
+        filterRegistrationBean.setOrder(2);
         return filterRegistrationBean;
     }
 
