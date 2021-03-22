@@ -3,15 +3,11 @@ package com.fdd;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/*
-    Springboot基本整合案例
- */
-
 @SpringBootApplication
-public class SpringbootHelloworldApplication {
+public class SpringbootEmailApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootHelloworldApplication.class, args);
+        SpringApplication.run(SpringbootEmailApplication.class, args);
     }
 
 }
