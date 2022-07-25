@@ -56,6 +56,8 @@
 
 14、Springboot整合websocket+netty实现聊天功能
 
+15、Springboot实现事件监听机制
+
 ### 三、数据库相关整合
 
 1、Springboot整合JDBC
